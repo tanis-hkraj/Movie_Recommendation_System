@@ -22,7 +22,7 @@ close_match=find_close_match[0]
 index_of_movie=movies_data[movies_data.title==close_match]['index'].values[0]
 simarlirity_score=list(enumerate(similarity[index_of_movie]))
 sorted_similar_movies=sorted(simarlirity_score,key=lambda x:x[1],reverse=True)
-print("Movies Suggested: \n")
+print("Movies Suggested: ")
 i=1
 for movie in sorted_similar_movies:
     index=movie[0]
